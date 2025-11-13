@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# Xcode
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+xcuserdata/
+
+# SwiftPM Xcode integration
+project.xcworkspace/xcuserdata/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# SwiftLint cache
+.swiftlint.yml.lock
+.swiftlint_tmp/
+
+# Archives and symbols
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Simulator
+*.simruntime
+*.simdevice
+
+# Objets temporales
+*.swp
+*.swo
+
+# Build artifacts
+build/
+
+# User-specific settings
+*.user
+*.userprefs
+
