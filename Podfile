@@ -53,5 +53,13 @@ target 'VoucherScanner' do
       react_native_path,
       :mac_catalyst_enabled => false,
     )
+
+    installer.pods_project.targets.each do |target|
+      if target.name == 'EXConstants'
+        target.build_configurations.each do |config|
+          config.build_settings['PROJECT_ROOT'] = expo_root
+        end
+      end
+    end
   end
 end
