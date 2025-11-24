@@ -6,10 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		830745B2B03A77509A1AB064 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2F2A224E0890F82CEE9FCDA3 /* PrivacyInfo.xcprivacy */; };
+		B03E03D4B52311D508241A5B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29971C9F4B71943D770BABAB /* ExpoModulesProvider.swift */; };
+		E3DDBDA95740BC78ACA3CC08 /* libPods-VoucherScanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300996C68D6FEA233CAC90F /* libPods-VoucherScanner.a */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1870105D2EC6209B006491BE /* VoucherScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoucherScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187010812EC620FD006491BE /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		187010822EC620FD006491BE /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		29971C9F4B71943D770BABAB /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-VoucherScanner/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		2F2A224E0890F82CEE9FCDA3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		57D0F5C877B9A5C4C2842D17 /* Pods-VoucherScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoucherScanner.release.xcconfig"; path = "Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner.release.xcconfig"; sourceTree = "<group>"; };
+		6300996C68D6FEA233CAC90F /* libPods-VoucherScanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoucherScanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FB2129FB0B7FEF0F4D7A96 /* Pods-VoucherScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoucherScanner.debug.xcconfig"; path = "Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -38,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DDBDA95740BC78ACA3CC08 /* libPods-VoucherScanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +62,10 @@
 				187010832EC620FD006491BE /* Configurations */,
 				1870105F2EC6209B006491BE /* VoucherScanner */,
 				1870105E2EC6209B006491BE /* Products */,
+				2F2A224E0890F82CEE9FCDA3 /* PrivacyInfo.xcprivacy */,
+				5BFA9329AF018FC29E3ACCDF /* Pods */,
+				BF2E47D9B33A7BD3767D4F2D /* Frameworks */,
+				5A97DE49552B9E19BAD4B9AA /* ExpoModulesProviders */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,40 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		34EE45535F68A229CF380B57 /* VoucherScanner */ = {
+			isa = PBXGroup;
+			children = (
+				29971C9F4B71943D770BABAB /* ExpoModulesProvider.swift */,
+			);
+			name = VoucherScanner;
+			sourceTree = "<group>";
+		};
+		5A97DE49552B9E19BAD4B9AA /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				34EE45535F68A229CF380B57 /* VoucherScanner */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		5BFA9329AF018FC29E3ACCDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75FB2129FB0B7FEF0F4D7A96 /* Pods-VoucherScanner.debug.xcconfig */,
+				57D0F5C877B9A5C4C2842D17 /* Pods-VoucherScanner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF2E47D9B33A7BD3767D4F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6300996C68D6FEA233CAC90F /* libPods-VoucherScanner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +127,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187010682EC6209E006491BE /* Build configuration list for PBXNativeTarget "VoucherScanner" */;
 			buildPhases = (
+				AFC5731D67319A998A0309A5 /* [CP] Check Pods Manifest.lock */,
+				5CD7FB4AC3E1475F2B44C092 /* [Expo] Configure project */,
 				187010592EC6209B006491BE /* Sources */,
 				1870105A2EC6209B006491BE /* Frameworks */,
 				1870105B2EC6209B006491BE /* Resources */,
+				B7843CD9E7F70BE7C9499662 /* [CP] Embed Pods Frameworks */,
+				842F795187BF3FCBD789098F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -89,8 +143,6 @@
 				1870105F2EC6209B006491BE /* VoucherScanner */,
 			);
 			name = VoucherScanner;
-			packageProductDependencies = (
-			);
 			productName = VoucherScanner;
 			productReference = 1870105D2EC6209B006491BE /* VoucherScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -134,16 +186,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830745B2B03A77509A1AB064 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CD7FB4AC3E1475F2B44C092 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env",
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/Pods/Target Support Files/Pods-VoucherScanner/expo-configure-project.sh",
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Pods/Target Support Files/Pods-VoucherScanner/ExpoModulesProvider.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-VoucherScanner/expo-configure-project.sh\"\n";
+		};
+		842F795187BF3FCBD789098F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFC5731D67319A998A0309A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoucherScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7843CD9E7F70BE7C9499662 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoucherScanner/Pods-VoucherScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		187010592EC6209B006491BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03E03D4B52311D508241A5B /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +294,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -206,9 +342,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../ocr-expo/node_modules/react-native";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -220,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -261,21 +399,27 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../ocr-expo/node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		187010692EC6209E006491BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FB2129FB0B7FEF0F4D7A96 /* Pods-VoucherScanner.debug.xcconfig */;
 			buildSettings = {
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 			};
 			name = Debug;
 		};
 		1870106A2EC6209E006491BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D0F5C877B9A5C4C2842D17 /* Pods-VoucherScanner.release.xcconfig */;
 			buildSettings = {
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 			};
 			name = Release;
 		};
