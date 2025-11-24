@@ -2,12 +2,10 @@ import SwiftUI
 
 @main
 struct VoucherScannerApp: App {
-    @StateObject private var viewModel = CameraViewModel()
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(viewModel)
+            ReactNativeView()
+                .ignoresSafeArea() // Optional: React Native usually handles safe areas itself or needs full screen
         }
     }
 }
