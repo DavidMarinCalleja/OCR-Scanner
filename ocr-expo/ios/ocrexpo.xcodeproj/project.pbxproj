@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0483B14F72039EC6EEFFAA07 /* libPods-ocrexpo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4C8A88C781EC5BB460C165 /* libPods-ocrexpo.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		18A4428B2ED4B36500A00356 /* VoucherScannerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A442892ED4B36500A00356 /* VoucherScannerViewManager.m */; };
+		18A4428C2ED4B36500A00356 /* VoucherScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A442882ED4B36500A00356 /* VoucherScannerView.swift */; };
+		18A4428D2ED4B36500A00356 /* VoucherScannerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4428A2ED4B36500A00356 /* VoucherScannerViewManager.swift */; };
 		1E362EC912CCF3328B9E91CC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8BDCF158D3B6AD4B832B4465 /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		65589348305A21CB0818CCE1 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF207DB1251E3F62D9650B63 /* ExpoModulesProvider.swift */; };
@@ -20,10 +23,13 @@
 		13B07F961A680F5B00A75B9A /* ocrexpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocrexpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ocrexpo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ocrexpo/Info.plist; sourceTree = "<group>"; };
+		18A442882ED4B36500A00356 /* VoucherScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherScannerView.swift; sourceTree = "<group>"; };
+		18A442892ED4B36500A00356 /* VoucherScannerViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoucherScannerViewManager.m; sourceTree = "<group>"; };
+		18A4428A2ED4B36500A00356 /* VoucherScannerViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherScannerViewManager.swift; sourceTree = "<group>"; };
 		2B4C8A88C781EC5BB460C165 /* libPods-ocrexpo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ocrexpo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFDCAA73CAF9EC9540A74E /* Pods-ocrexpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocrexpo.release.xcconfig"; path = "Target Support Files/Pods-ocrexpo/Pods-ocrexpo.release.xcconfig"; sourceTree = "<group>"; };
 		595F2E3D8657E98DA2ADE580 /* Pods-ocrexpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocrexpo.debug.xcconfig"; path = "Target Support Files/Pods-ocrexpo/Pods-ocrexpo.debug.xcconfig"; sourceTree = "<group>"; };
-		8BDCF158D3B6AD4B832B4465 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = ocrexpo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8BDCF158D3B6AD4B832B4465 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ocrexpo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = ocrexpo/SplashScreen.storyboard; sourceTree = "<group>"; };
 		AF207DB1251E3F62D9650B63 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ocrexpo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
@@ -47,6 +53,9 @@
 		13B07FAE1A68108700A75B9A /* ocrexpo */ = {
 			isa = PBXGroup;
 			children = (
+				18A442882ED4B36500A00356 /* VoucherScannerView.swift */,
+				18A442892ED4B36500A00356 /* VoucherScannerViewManager.m */,
+				18A4428A2ED4B36500A00356 /* VoucherScannerViewManager.swift */,
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
 				F11748442D0722820044C1D9 /* ocrexpo-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
@@ -111,7 +120,6 @@
 				595F2E3D8657E98DA2ADE580 /* Pods-ocrexpo.debug.xcconfig */,
 				3EEFDCAA73CAF9EC9540A74E /* Pods-ocrexpo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -322,6 +330,9 @@
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				65589348305A21CB0818CCE1 /* ExpoModulesProvider.swift in Sources */,
+				18A4428B2ED4B36500A00356 /* VoucherScannerViewManager.m in Sources */,
+				18A4428C2ED4B36500A00356 /* VoucherScannerView.swift in Sources */,
+				18A4428D2ED4B36500A00356 /* VoucherScannerViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MUNF9A7YWQ;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -369,6 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MUNF9A7YWQ;
 				INFOPLIST_FILE = ocrexpo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
