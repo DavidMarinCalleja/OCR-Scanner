@@ -1,21 +1,8 @@
 import React from 'react';
-import { requireNativeComponent } from 'react-native';
+import { requireNativeViewManager } from 'expo-modules-core';
 
-const NativeVoucherScanner = requireNativeComponent('VoucherScannerView');
+const VoucherScannerView = requireNativeViewManager('VoucherScannerViewModule');
 
-const VoucherScanner = ({ onVoucherDetected, style }) => {
-    const handleVoucherDetected = (event) => {
-        if (onVoucherDetected) {
-            onVoucherDetected(event.nativeEvent.voucher);
-        }
-    };
-
-    return (
-        <NativeVoucherScanner
-            style={style}
-            onVoucherDetected={handleVoucherDetected}
-        />
-    );
-};
-
-export default VoucherScanner;
+export default function VoucherScannerViewModule(props) {
+    return <VoucherScannerView{...props} />;
+}
