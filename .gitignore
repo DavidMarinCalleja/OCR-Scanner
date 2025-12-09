@@ -54,3 +54,5 @@ build/
 *.user
 *.userprefs
 
+# Build
+*.xcframework
