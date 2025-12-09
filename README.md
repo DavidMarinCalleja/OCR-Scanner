@@ -12,6 +12,10 @@ Esta aplicación permite a los usuarios:
 
 La aplicación utiliza el framework **Vision** de iOS para realizar el reconocimiento de texto de forma nativa, proporcionando alta precisión y rendimiento.
 
+## 📹 Demo
+
+<img src="doc/example.gif" />
+
 ## 🏗️ Arquitectura del Proyecto
 
 ```
